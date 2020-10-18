@@ -13,18 +13,18 @@ A very basic cloud-formation template to showcase sns-sqs fanout with an alarm o
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-# Set phone number for alerts
+### Set phone number for alerts
 Update the parameters.json file to include phone number to receive alerts
 
-# Create Stack
+### Create Stack
 ```aws cloudformation create-stack --stack-name "s3-event-fanout"  --template-body file://template.yaml --parameters file://parameters.json
 ```
 
-# Update Stack
+### Update Stack
 ```aws cloudformation update-stack --stack-name "s3-event-fanout"  --template-body file://template.yaml --parameters file://parameters.json
 ```
 
-# Delete stack
+### Delete stack
 ```aws cloudformation delete-stack --stack-name "s3-event-fanout"
 ```
 
